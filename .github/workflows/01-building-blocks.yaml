@@ -12,4 +12,9 @@ jobs:
     runs-on:  ubuntu-latest
     steps:
       - name: Success step
-        run: echo "I will succeed, GoddBye!"
+        run: echo "I will succeed, GoddBye! and run other also"
+  echo-newtest:
+    runs-on:  ubuntu-latest
+    steps:
+      - name: Success step for 2nd moduel
+        run: echo "Run 2nd module"
