@@ -6,7 +6,7 @@ on:
    
 
 jobs:
-  echo-data:
+  echo:
      runs-on: ubuntu-latest 
      steps:
        - name: Display Information
