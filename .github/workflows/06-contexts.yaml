@@ -37,11 +37,11 @@ jobs:
               env:
                 MY_OVERWRITTEN_VAR: 'step'
               run: |
-                echo "Variable value ${{ vars.MY_OVERWRITTEN_VAR }}"  
-                echo "Variable value ${{ vars.MY_WORKFLOW_VAR }}" 
-                echo "Variable value ${{ vars.MY_JOB_VAR }}" 
+                echo "Variable value $MY_OVERWRITTEN_VAR"  
+                echo "Variable value $MY_WORKFLOW_VAR" 
+                echo "Variable value $MY_JOB_VAR" 
             - name: Print Env var after step 
-              run: echo "Variable value after step ${{ vars.MY_OVERWRITTEN_VAR }}"  
+              run: echo "Variable value after step $MY_OVERWRITTEN_VAR"  
                 
 
 
