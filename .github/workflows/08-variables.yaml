@@ -16,5 +16,5 @@ jobs:
               STEP_VAR: 'I am step env variable'
               OVERWRITTEN_VAR: 'I am overwritten by job'
             run: |
-              echo " Env step variable $env.STEP_VAR"
-              echo " overwritten variable $env.OVERWRITTEN_VAR"
+              echo " Env step variable ${{ env.STEP_VAR }}"
+              echo " overwritten variable ${{ env.OVERWRITTEN_VAR }}"
