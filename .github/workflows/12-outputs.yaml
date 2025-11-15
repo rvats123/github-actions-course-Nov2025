@@ -14,7 +14,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    output:
+    outputs:
       build-status: ${{ steps.build.outputs.status }}
     steps:
       - name: Print GITHUB_OUTPUT path
