@@ -7,6 +7,15 @@ on:
         description: Wheter to execute cache steps
         type: boolean
         default: true
+      node-version:
+        description: Node version
+        type: choice
+        options:
+            - 18.x
+            - 21.x
+            - 20.x
+        default: 20.x
+
 
 jobs:
   build:
@@ -20,7 +29,7 @@ jobs:
         - name: Setup node
           uses: actions/setup-node@v3
           with:
-            node-version: '20.x'
+            node-version: ${{ inputs.node-vesrion }}
         - name: Install dependencies
           run: npm ci
         - name: Testing
