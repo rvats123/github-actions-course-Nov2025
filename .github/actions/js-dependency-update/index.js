@@ -23,9 +23,7 @@ async function run() {
         core.setFailed ('Invalid Directory , does not meet our expectations');
         return;
     }
-    core.info('[js-depedency-update] : base branch is ${baseBranch}');
-    core.info('[js-depedency-update] : target branch is ${targetBranch}');
-    core.info('[js-depedency-update] : direcotry is ${workingDiretory}');
+
 
     await exec.exec ( 'npm update' , [], { 
         cwd: workingDirectory
