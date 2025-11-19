@@ -16,12 +16,12 @@ async function run() {
         
     }
     if(!validateBranchName({ branchName: targetBranch})) {
-        core.setFailed ('Invalid target branch name , does not meet our expectations');
-        return;
+        core.info ('Invalid target branch name , does not meet our expectations');
+
     }
     if(!validateDirectoryName({ dirName: workingDirectory})) {
-        core.setFailed ('Invalid Directory , does not meet our expectations');
-        return;
+        core.info ('Invalid Directory , does not meet our expectations');
+
     }
 
 
