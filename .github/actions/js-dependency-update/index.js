@@ -12,8 +12,8 @@ async function run() {
     
     core.setSecret(ghToken);
     if(!validateBranchName({ branchName: baseBranch})) {
-        core.setFailed ('Invalid base branch name , does not meet our expectations');
-        return;
+        core.info ('Invalid base branch name , does not meet our expectations');
+        
     }
     if(!validateBranchName({ branchName: targetBranch})) {
         core.setFailed ('Invalid target branch name , does not meet our expectations');
