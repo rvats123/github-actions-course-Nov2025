@@ -5,7 +5,7 @@ on:
     inputs:
         target-directory:
             type: string
-            required: true
+            required: false
     outputs:
         build-status:
           description: Status of the build job
