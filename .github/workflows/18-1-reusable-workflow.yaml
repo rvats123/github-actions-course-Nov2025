@@ -8,10 +8,10 @@ on:
             required: true
     outputs:
         build-status:
-          desciption: Status of the build job
+          description: Status of the build job
           value: ${{ jobs.deploy.outputs.build-status }}
         url:
-          desciption: Status of the build job
+          description: Status of the build job
           value: ${{ jobs.deploy.outputs.url }}
 
 jobs:
